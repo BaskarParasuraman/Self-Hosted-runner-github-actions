@@ -1,0 +1,12 @@
+name: Git Hosted test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      -name: Print message
+       run:
+         echo "Hello Github actions"
