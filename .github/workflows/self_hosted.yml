@@ -16,4 +16,4 @@ jobs:
 
       - name: Read files
         run: |
-          cat example.txt
+          cat .github/workflows/example.txt
