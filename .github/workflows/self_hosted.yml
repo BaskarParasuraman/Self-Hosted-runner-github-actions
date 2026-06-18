@@ -7,6 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print message
+      - name: Checkout the repo
+        uses: actions/checkout@v4
+
+      - name: List the files
         run: |
-          echo "Hello Github actions"
+          ls -a
+
+      - name: Read files
+        run: |
+          cat example.txt
