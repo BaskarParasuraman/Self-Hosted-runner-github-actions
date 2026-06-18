@@ -10,10 +10,5 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v4
 
-      - name: List the files
-        run: |
-          ls -a
-
-      - name: Read files
-        run: |
-          cat .github/workflows/example.txt
+      - name: Build Docker Image
+        run: docker build -t my-nginx
